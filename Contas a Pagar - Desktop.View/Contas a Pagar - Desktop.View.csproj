@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEA97813-0C32-4E08-9F4E-BEFCDA22E8C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Contas_a_Pagar___Desktop.View</RootNamespace>
+    <AssemblyName>Contas a Pagar - AEDB</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AEDB-50-anos-Cor.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAgencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgencia.Designer.cs">
+      <DependentUpon>FrmAgencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAprovarSolicitacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAprovarSolicitacao.Designer.cs">
+      <DependentUpon>FrmAprovarSolicitacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBanco.Designer.cs">
+      <DependentUpon>FrmBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCancelarFornecimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCancelarFornecimento.Designer.cs">
+      <DependentUpon>FrmCancelarFornecimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContaCorrente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContaCorrente.Designer.cs">
+      <DependentUpon>FrmContaCorrente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDespesa.Designer.cs">
+      <DependentUpon>FrmDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFornecimentoMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFornecimentoMaterial.Designer.cs">
+      <DependentUpon>FrmFornecimentoMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLancamento.Designer.cs">
+      <DependentUpon>FrmLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaAgencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaAgencia.Designer.cs">
+      <DependentUpon>FrmListaAgencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaBanco.Designer.cs">
+      <DependentUpon>FrmListaBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaContaCorrente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaContaCorrente.Designer.cs">
+      <DependentUpon>FrmListaContaCorrente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaDespesa.Designer.cs">
+      <DependentUpon>FrmListaDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaFornecedores.Designer.cs">
+      <DependentUpon>FrmListaFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaFornecimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaFornecimentos.Designer.cs">
+      <DependentUpon>FrmListaFornecimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaFornecimentosPorEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaFornecimentosPorEmpresa.Designer.cs">
+      <DependentUpon>FrmListaFornecimentosPorEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaSolicitacoesPorSetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaSolicitacoesPorSetor.Designer.cs">
+      <DependentUpon>FrmListaSolicitacoesPorSetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaLancamento.Designer.cs">
+      <DependentUpon>FrmListaLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaMaterial.Designer.cs">
+      <DependentUpon>FrmListaMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaPagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaPagamentos.Designer.cs">
+      <DependentUpon>FrmListaPagamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaPlanoContas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaPlanoContas.Designer.cs">
+      <DependentUpon>FrmListaPlanoContas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaSetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaSetor.Designer.cs">
+      <DependentUpon>FrmListaSetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaSolicitacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaSolicitacao.Designer.cs">
+      <DependentUpon>FrmListaSolicitacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaterial.Designer.cs">
+      <DependentUpon>FrmMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPagamento.Designer.cs">
+      <DependentUpon>FrmPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlanoContas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlanoContas.Designer.cs">
+      <DependentUpon>FrmPlanoContas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFornecedor.Designer.cs">
+      <DependentUpon>FrmFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatorioFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorioFornecedor.Designer.cs">
+      <DependentUpon>FrmRelatorioFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetor.Designer.cs">
+      <DependentUpon>FrmSetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSolicitacaoMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSolicitacaoMaterial.Designer.cs">
+      <DependentUpon>FrmSolicitacaoMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSolicitacoesPorSetorAprovadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSolicitacoesPorSetorAprovadas.Designer.cs">
+      <DependentUpon>FrmSolicitacoesPorSetorAprovadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\EstadoCampos.cs" />
+    <Compile Include="Helper\MensagemAviso.cs" />
+    <Compile Include="Helper\MensagemErro.cs" />
+    <Compile Include="Helper\ValidacaoNumericos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CAgencia\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CBanco\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CContaCorrente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CDespesa\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CFornecedor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CFornecimentoMaterial\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CLancamento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CMaterial\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CPagamento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CPlanoContas\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CSetor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CSolicitacaoMaterial\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSolicitacoesPorSetorNaoAprovadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSolicitacoesPorSetorNaoAprovadas.Designer.cs">
+      <DependentUpon>FrmSolicitacoesPorSetorNaoAprovadas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAgencia.resx">
+      <DependentUpon>FrmAgencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAprovarSolicitacao.resx">
+      <DependentUpon>FrmAprovarSolicitacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBanco.resx">
+      <DependentUpon>FrmBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCancelarFornecimento.resx">
+      <DependentUpon>FrmCancelarFornecimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContaCorrente.resx">
+      <DependentUpon>FrmContaCorrente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDespesa.resx">
+      <DependentUpon>FrmDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFornecimentoMaterial.resx">
+      <DependentUpon>FrmFornecimentoMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLancamento.resx">
+      <DependentUpon>FrmLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaAgencia.resx">
+      <DependentUpon>FrmListaAgencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaBanco.resx">
+      <DependentUpon>FrmListaBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaContaCorrente.resx">
+      <DependentUpon>FrmListaContaCorrente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaDespesa.resx">
+      <DependentUpon>FrmListaDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaFornecedores.resx">
+      <DependentUpon>FrmListaFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaFornecimentos.resx">
+      <DependentUpon>FrmListaFornecimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaFornecimentosPorEmpresa.resx">
+      <DependentUpon>FrmListaFornecimentosPorEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaSolicitacoesPorSetor.resx">
+      <DependentUpon>FrmListaSolicitacoesPorSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaLancamento.resx">
+      <DependentUpon>FrmListaLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaMaterial.resx">
+      <DependentUpon>FrmListaMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaPagamentos.resx">
+      <DependentUpon>FrmListaPagamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaPlanoContas.resx">
+      <DependentUpon>FrmListaPlanoContas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaSetor.resx">
+      <DependentUpon>FrmListaSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaSolicitacao.resx">
+      <DependentUpon>FrmListaSolicitacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaterial.resx">
+      <DependentUpon>FrmMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPagamento.resx">
+      <DependentUpon>FrmPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlanoContas.resx">
+      <DependentUpon>FrmPlanoContas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFornecedor.resx">
+      <DependentUpon>FrmFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorioFornecedor.resx">
+      <DependentUpon>FrmRelatorioFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetor.resx">
+      <DependentUpon>FrmSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSolicitacaoMaterial.resx">
+      <DependentUpon>FrmSolicitacaoMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSolicitacoesPorSetorAprovadas.resx">
+      <DependentUpon>FrmSolicitacoesPorSetorAprovadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSolicitacoesPorSetorNaoAprovadas.resx">
+      <DependentUpon>FrmSolicitacoesPorSetorNaoAprovadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\rdlcFornecedor.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\CAgencia\CAgencia.wsdl" />
+    <None Include="Service References\CAgencia\CAgencia.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CAgencia\CAgencia1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CAgencia\CAgencia2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CAgencia\Contas_a_Pagar___Desktop.View.CAgencia.Agencia.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CAgencia\Contas_a_Pagar___Desktop.View.CAgencia.PesquisaAgencia.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CBanco\CBanco.wsdl" />
+    <None Include="Service References\CBanco\CBanco.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CBanco\CBanco1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CBanco\CBanco2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CBanco\Contas_a_Pagar___Desktop.View.CBanco.Banco.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CContaCorrente\CContaCorrente.wsdl" />
+    <None Include="Service References\CContaCorrente\CContaCorrente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CContaCorrente\CContaCorrente1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CContaCorrente\CContaCorrente2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CContaCorrente\Contas_a_Pagar___Desktop.View.CContaCorrente.ContaCorrente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CContaCorrente\Contas_a_Pagar___Desktop.View.CContaCorrente.PesquisarCC.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CDespesa\CDespesa.wsdl" />
+    <None Include="Service References\CDespesa\CDespesa.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CDespesa\CDespesa1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CDespesa\CDespesa2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CDespesa\Contas_a_Pagar___Desktop.View.CDespesa.Despesa.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CFornecedor\CFornecedor.wsdl" />
+    <None Include="Service References\CFornecedor\CFornecedor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CFornecedor\CFornecedor1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CFornecedor\CFornecedor2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CFornecedor\Contas_a_Pagar___Desktop.View.CFornecedor.Fornecedor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CFornecimentoMaterial\CFornecimentoMaterial.wsdl" />
+    <None Include="Service References\CFornecimentoMaterial\CFornecimentoMaterial.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CFornecimentoMaterial\CFornecimentoMaterial1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CFornecimentoMaterial\CFornecimentoMaterial2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CFornecimentoMaterial\Contas_a_Pagar___Desktop.View.CFornecimentoMaterial.DetalhesFornecimento_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CFornecimentoMaterial\Contas_a_Pagar___Desktop.View.CFornecimentoMaterial.FornecimentoMaterial.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CFornecimentoMaterial\Contas_a_Pagar___Desktop.View.CFornecimentoMaterial.FornecimentosMateriais.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CFornecimentoMaterial\Contas_a_Pagar___Desktop.View.CFornecimentoMaterial.Material.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CFornecimentoMaterial\Contas_a_Pagar___Desktop.View.CFornecimentoMaterial.NumFornecimentosPorEmpresa.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CFornecimentoMaterial\Contas_a_Pagar___Desktop.View.CFornecimentoMaterial.RelacaoFornecimento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CFornecimentoMaterial\Contas_a_Pagar___Desktop.View.CFornecimentoMaterial.TodosFornecimentos_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CLancamento\CLancamento.wsdl" />
+    <None Include="Service References\CLancamento\CLancamento.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CLancamento\CLancamento1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CLancamento\CLancamento2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CLancamento\Contas_a_Pagar___Desktop.View.CLancamento.Lancamento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CMaterial\CMaterial.wsdl" />
+    <None Include="Service References\CMaterial\CMaterial.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CMaterial\CMaterial1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CMaterial\CMaterial2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CMaterial\Contas_a_Pagar___Desktop.View.CMaterial.Material.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CPagamento\Contas_a_Pagar___Desktop.View.CPagamento.Pagamento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CPagamento\CPagamento.wsdl" />
+    <None Include="Service References\CPagamento\CPagamento.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CPagamento\CPagamento1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CPagamento\CPagamento2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CPlanoContas\Contas_a_Pagar___Desktop.View.CPlanoContas.PlanoContas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CPlanoContas\CPlanoContas.wsdl" />
+    <None Include="Service References\CPlanoContas\CPlanoContas.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CPlanoContas\CPlanoContas1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CPlanoContas\CPlanoContas2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSetor\Contas_a_Pagar___Desktop.View.CSetor.Setor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSetor\CSetor.wsdl" />
+    <None Include="Service References\CSetor\CSetor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSetor\CSetor1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSetor\CSetor2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\Contas_a_Pagar___Desktop.View.CSolicitacaoMaterial.DetalhesSolicitacao_Result1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\Contas_a_Pagar___Desktop.View.CSolicitacaoMaterial.Material.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\Contas_a_Pagar___Desktop.View.CSolicitacaoMaterial.NumSolicitacoesAprovadosPorSetor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\Contas_a_Pagar___Desktop.View.CSolicitacaoMaterial.NumSolicitacoesNaoAprovadosPorSetor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\Contas_a_Pagar___Desktop.View.CSolicitacaoMaterial.NumSolicitacoesPorSetor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\Contas_a_Pagar___Desktop.View.CSolicitacaoMaterial.RelacaoSolicitacao.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\Contas_a_Pagar___Desktop.View.CSolicitacaoMaterial.SolicitacaoMaterial.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\Contas_a_Pagar___Desktop.View.CSolicitacaoMaterial.SolicitacoesMateriais.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\Contas_a_Pagar___Desktop.View.CSolicitacaoMaterial.TodasSolicitacoesAprovadas_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\Contas_a_Pagar___Desktop.View.CSolicitacaoMaterial.TodasSolicitacoes_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\CSolicitacaoMaterial.wsdl" />
+    <None Include="Service References\CSolicitacaoMaterial\CSolicitacaoMaterial.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\CSolicitacaoMaterial1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\CSolicitacaoMaterial2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contas a Pagar - Desktop.Control\Contas a Pagar - Desktop.Control.csproj">
+      <Project>{7dc6cd22-f48c-401d-a3d1-156cb15a7dac}</Project>
+      <Name>Contas a Pagar - Desktop.Control</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CAgencia\" />
+    <WCFMetadataStorage Include="Service References\CBanco\" />
+    <WCFMetadataStorage Include="Service References\CContaCorrente\" />
+    <WCFMetadataStorage Include="Service References\CDespesa\" />
+    <WCFMetadataStorage Include="Service References\CFornecedor\" />
+    <WCFMetadataStorage Include="Service References\CFornecimentoMaterial\" />
+    <WCFMetadataStorage Include="Service References\CLancamento\" />
+    <WCFMetadataStorage Include="Service References\CMaterial\" />
+    <WCFMetadataStorage Include="Service References\CPagamento\" />
+    <WCFMetadataStorage Include="Service References\CPlanoContas\" />
+    <WCFMetadataStorage Include="Service References\CSetor\" />
+    <WCFMetadataStorage Include="Service References\CSolicitacaoMaterial\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CFornecedor\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CFornecedor\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CFornecedor\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AEDB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CMaterial\CMaterial.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CMaterial\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CMaterial\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CMaterial\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSetor\CSetor.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSetor\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSetor\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CSetor\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CBanco\CBanco.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CBanco\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CBanco\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CBanco\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CAgencia\CAgencia.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CAgencia\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CAgencia\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CAgencia\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CContaCorrente\CContaCorrente.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CContaCorrente\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CContaCorrente\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CContaCorrente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CPlanoContas\CPlanoContas.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CPlanoContas\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CPlanoContas\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CPlanoContas\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CLancamento\CLancamento.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CLancamento\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CLancamento\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CLancamento\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CFornecimentoMaterial\CFornecimentoMaterial.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CFornecimentoMaterial\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CFornecimentoMaterial\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CFornecimentoMaterial\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CPagamento\CPagamento.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CPagamento\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CPagamento\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CPagamento\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CDespesa\CDespesa.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CDespesa\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CDespesa\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CDespesa\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AEDB-50-anos-Cor.ico" />
+    <None Include="Service References\CSolicitacaoMaterial\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CSolicitacaoMaterial\configuration.svcinfo" />
+    <None Include="Service References\CSolicitacaoMaterial\configuration91.svcinfo" />
+    <None Include="Service References\CSolicitacaoMaterial\CSolicitacaoMaterial.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

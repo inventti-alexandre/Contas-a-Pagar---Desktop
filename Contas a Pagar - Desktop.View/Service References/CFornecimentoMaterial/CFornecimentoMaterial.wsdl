@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CFornecimentoMaterial" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:14139/CFornecimentoMaterial.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:14139/CFornecimentoMaterial.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:14139/CFornecimentoMaterial.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICFornecimentoMaterial_Inserir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Inserir" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_Inserir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosView_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosView" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosView_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodos_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodos" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosMateriais_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosMateriais" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosMateriais_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosMateriaisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosFornecimentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosFornecimentos" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosFornecimentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosFornecimentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosDetalhesFornecimentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosDetalhesFornecimentos" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosDetalhesFornecimentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosDetalhesFornecimentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosFornecimentosCriterio_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosFornecimentosCriterio" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosFornecimentosCriterio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosFornecimentosCriterioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_FornecimentoExiste_InputMessage">
+    <wsdl:part name="parameters" element="tns:FornecimentoExiste" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_FornecimentoExiste_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FornecimentoExisteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosFornecimentosPorEmpresa_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosFornecimentosPorEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosFornecimentosPorEmpresa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosFornecimentosPorEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosFornecimentosBasico_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosFornecimentosBasico" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosFornecimentosBasico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosFornecimentosBasicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_CancelarFornecimento_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarFornecimento" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_CancelarFornecimento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarFornecimentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosNaoCancelados_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosNaoCancelados" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosNaoCancelados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosNaoCanceladosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosFornecimentosPorEmpresaPesquisa_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosFornecimentosPorEmpresaPesquisa" />
+  </wsdl:message>
+  <wsdl:message name="ICFornecimentoMaterial_SelecionarTodosFornecimentosPorEmpresaPesquisa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosFornecimentosPorEmpresaPesquisaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICFornecimentoMaterial">
+    <wsdl:operation name="Inserir">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/Inserir" message="tns:ICFornecimentoMaterial_Inserir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/InserirResponse" message="tns:ICFornecimentoMaterial_Inserir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosView">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosView" message="tns:ICFornecimentoMaterial_SelecionarTodosView_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosViewResponse" message="tns:ICFornecimentoMaterial_SelecionarTodosView_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodos" message="tns:ICFornecimentoMaterial_SelecionarTodos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosResponse" message="tns:ICFornecimentoMaterial_SelecionarTodos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosMateriais">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosMateriais" message="tns:ICFornecimentoMaterial_SelecionarTodosMateriais_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosMateriaisResponse" message="tns:ICFornecimentoMaterial_SelecionarTodosMateriais_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosFornecimentos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentos" message="tns:ICFornecimentoMaterial_SelecionarTodosFornecimentos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosResponse" message="tns:ICFornecimentoMaterial_SelecionarTodosFornecimentos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosDetalhesFornecimentos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosDetalhesFornecimentos" message="tns:ICFornecimentoMaterial_SelecionarTodosDetalhesFornecimentos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosDetalhesFornecimentosResponse" message="tns:ICFornecimentoMaterial_SelecionarTodosDetalhesFornecimentos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosFornecimentosCriterio">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosCriterio" message="tns:ICFornecimentoMaterial_SelecionarTodosFornecimentosCriterio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosCriterioResponse" message="tns:ICFornecimentoMaterial_SelecionarTodosFornecimentosCriterio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FornecimentoExiste">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/FornecimentoExiste" message="tns:ICFornecimentoMaterial_FornecimentoExiste_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/FornecimentoExisteResponse" message="tns:ICFornecimentoMaterial_FornecimentoExiste_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosFornecimentosPorEmpresa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosPorEmpresa" message="tns:ICFornecimentoMaterial_SelecionarTodosFornecimentosPorEmpresa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosPorEmpresaResponse" message="tns:ICFornecimentoMaterial_SelecionarTodosFornecimentosPorEmpresa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosFornecimentosBasico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosBasico" message="tns:ICFornecimentoMaterial_SelecionarTodosFornecimentosBasico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosBasicoResponse" message="tns:ICFornecimentoMaterial_SelecionarTodosFornecimentosBasico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelarFornecimento">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/CancelarFornecimento" message="tns:ICFornecimentoMaterial_CancelarFornecimento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/CancelarFornecimentoResponse" message="tns:ICFornecimentoMaterial_CancelarFornecimento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosNaoCancelados">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosNaoCancelados" message="tns:ICFornecimentoMaterial_SelecionarTodosNaoCancelados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosNaoCanceladosResponse" message="tns:ICFornecimentoMaterial_SelecionarTodosNaoCancelados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosFornecimentosPorEmpresaPesquisa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosPorEmpresaPesquisa" message="tns:ICFornecimentoMaterial_SelecionarTodosFornecimentosPorEmpresaPesquisa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosPorEmpresaPesquisaResponse" message="tns:ICFornecimentoMaterial_SelecionarTodosFornecimentosPorEmpresaPesquisa_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICFornecimentoMaterial" type="tns:ICFornecimentoMaterial">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Inserir">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/Inserir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosView">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodos">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosMateriais">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosMateriais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosFornecimentos">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosDetalhesFornecimentos">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosDetalhesFornecimentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosFornecimentosCriterio">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosCriterio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FornecimentoExiste">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/FornecimentoExiste" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosFornecimentosPorEmpresa">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosFornecimentosBasico">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosBasico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelarFornecimento">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/CancelarFornecimento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosNaoCancelados">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosNaoCancelados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosFornecimentosPorEmpresaPesquisa">
+      <soap:operation soapAction="http://tempuri.org/ICFornecimentoMaterial/SelecionarTodosFornecimentosPorEmpresaPesquisa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CFornecimentoMaterial">
+    <wsdl:port name="BasicHttpBinding_ICFornecimentoMaterial" binding="tns:BasicHttpBinding_ICFornecimentoMaterial">
+      <soap:address location="http://localhost:14139/CFornecimentoMaterial.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

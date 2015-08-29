@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:14139/CBanco.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" />
+  <xs:element name="Inserir">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="oBanco" nillable="true" type="q1:Banco" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Alterar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="oBanco" nillable="true" type="q2:Banco" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlterarResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Excluir">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExcluirResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodosResult" nillable="true" type="q3:ArrayOfBanco" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosCriterio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Criterio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Escolha" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosCriterioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodosCriterioResult" nillable="true" type="q4:ArrayOfBanco" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BancoExiste">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BancoExisteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BancoExisteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

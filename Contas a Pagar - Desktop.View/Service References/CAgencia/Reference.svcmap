@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="733f66aa-0960-4cf1-8f78-b4504158c291" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:14139/CAgencia.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CAgencia.xsd" MetadataType="Schema" ID="c2a02b0b-0a46-46ec-964a-fe8dbaa3eb78" SourceId="1" SourceUrl="http://localhost:14139/CAgencia.svc?xsd=xsd0" />
+    <MetadataFile FileName="CAgencia.disco" MetadataType="Disco" ID="6e065719-05ef-4543-bfb5-d4feabb8fb0b" SourceId="1" SourceUrl="http://localhost:14139/CAgencia.svc?disco" />
+    <MetadataFile FileName="CAgencia.wsdl" MetadataType="Wsdl" ID="0d62358b-e7e1-4696-b34e-d28f01776bf2" SourceId="1" SourceUrl="http://localhost:14139/CAgencia.svc?wsdl" />
+    <MetadataFile FileName="CAgencia1.xsd" MetadataType="Schema" ID="e5c84811-efe7-4290-89ac-ce8464d40ca0" SourceId="1" SourceUrl="http://localhost:14139/CAgencia.svc?xsd=xsd2" />
+    <MetadataFile FileName="CAgencia2.xsd" MetadataType="Schema" ID="207e8d67-a7d3-44db-99e7-99d94ee19922" SourceId="1" SourceUrl="http://localhost:14139/CAgencia.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

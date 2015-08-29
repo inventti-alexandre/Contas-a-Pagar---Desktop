@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2b86dfe6-31cd-46b3-a1fe-2dd51ad796da" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:14139/CPagamento.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CPagamento.disco" MetadataType="Disco" ID="a7362751-9b00-481e-886a-ab1a2cdbd161" SourceId="1" SourceUrl="http://localhost:14139/CPagamento.svc?disco" />
+    <MetadataFile FileName="CPagamento.wsdl" MetadataType="Wsdl" ID="2c75dcff-bd7e-4ea0-a972-1fdf710cc47f" SourceId="1" SourceUrl="http://localhost:14139/CPagamento.svc?wsdl" />
+    <MetadataFile FileName="CPagamento.xsd" MetadataType="Schema" ID="7095eae1-853b-4785-9fc8-2177f1902383" SourceId="1" SourceUrl="http://localhost:14139/CPagamento.svc?xsd=xsd0" />
+    <MetadataFile FileName="CPagamento1.xsd" MetadataType="Schema" ID="15198f1c-0e78-4023-8f74-9e5abab18952" SourceId="1" SourceUrl="http://localhost:14139/CPagamento.svc?xsd=xsd1" />
+    <MetadataFile FileName="CPagamento2.xsd" MetadataType="Schema" ID="5e1f6ddf-da5a-46f9-b2f4-82c7557ede41" SourceId="1" SourceUrl="http://localhost:14139/CPagamento.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

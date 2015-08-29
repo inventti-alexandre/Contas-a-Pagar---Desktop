@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:14139/CSetor.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Setor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Setor" nillable="true" type="tns:Setor" />
+  <xs:complexType name="ArrayOfSetor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Setor" nillable="true" type="tns:Setor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSetor" nillable="true" type="tns:ArrayOfSetor" />
+</xs:schema>

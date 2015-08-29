@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Contas_a_Pagar___Desktop.Control.CPagamento" CodeBehind="CPagamento.svc.cs" %>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="56a0c922-0d9b-4d37-baf2-eaf3e3795ba8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:14139/CLancamento.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CLancamento.xsd" MetadataType="Schema" ID="77dfb0e8-091a-4326-a938-d6e4d9d5914b" SourceId="1" SourceUrl="http://localhost:14139/CLancamento.svc?xsd=xsd1" />
+    <MetadataFile FileName="CLancamento.wsdl" MetadataType="Wsdl" ID="63ebdf1c-02ab-429e-bd5a-e707225794f2" SourceId="1" SourceUrl="http://localhost:14139/CLancamento.svc?wsdl" />
+    <MetadataFile FileName="CLancamento1.xsd" MetadataType="Schema" ID="0d7daa51-e50b-4c14-bb45-02fffaa9aa0f" SourceId="1" SourceUrl="http://localhost:14139/CLancamento.svc?xsd=xsd2" />
+    <MetadataFile FileName="CLancamento2.xsd" MetadataType="Schema" ID="b9851277-c72f-4301-86bc-9444fdab978e" SourceId="1" SourceUrl="http://localhost:14139/CLancamento.svc?xsd=xsd0" />
+    <MetadataFile FileName="CLancamento.disco" MetadataType="Disco" ID="0d71cb8c-102d-456f-a4da-2f6f2b77b1b0" SourceId="1" SourceUrl="http://localhost:14139/CLancamento.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

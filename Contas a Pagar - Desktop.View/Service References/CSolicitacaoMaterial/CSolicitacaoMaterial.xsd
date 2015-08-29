@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:14139/CSolicitacaoMaterial.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" />
+  <xs:element name="Inserir">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="oSolicitacaoMaterial" nillable="true" type="q1:SolicitacaoMaterial" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InserirResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosView">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosViewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodosViewResult" nillable="true" type="q2:ArrayOfSolicitacoesMateriais" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodosResult" nillable="true" type="q3:ArrayOfSolicitacaoMaterial" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosMateriais">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosMateriaisResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodosMateriaisResult" nillable="true" type="q4:ArrayOfMaterial" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosSolicitacaos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosSolicitacaosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodosSolicitacaosResult" nillable="true" type="q5:ArrayOfRelacaoSolicitacao" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosDetalhesSolicitacaos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Solicitacao" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosDetalhesSolicitacaosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodosDetalhesSolicitacaosResult" nillable="true" type="q6:ArrayOfDetalhesSolicitacao_Result1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosSolicitacaosCriterio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Criterio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Escolha" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosSolicitacaosCriterioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodosSolicitacaosCriterioResult" nillable="true" type="q7:ArrayOfRelacaoSolicitacao" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitacaoExiste">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SolicitacaoID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SolicitacaoExisteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SolicitacaoExisteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosNaoAprovados">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosNaoAprovadosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodosNaoAprovadosResult" nillable="true" type="q8:ArrayOfSolicitacaoMaterial" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosAprovados">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodosAprovadosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodosAprovadosResult" nillable="true" type="q9:ArrayOfSolicitacaoMaterial" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AprovarSolicitacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Solicitacao" type="xs:int" />
+        <xs:element minOccurs="0" name="Aprovacao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AprovarSolicitacaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AprovarSolicitacaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesPorSetor">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesPorSetorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodasSolicitacoesPorSetorResult" nillable="true" type="q10:ArrayOfNumSolicitacoesPorSetor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesBasico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Setor" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesBasicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodasSolicitacoesBasicoResult" nillable="true" type="q11:ArrayOfTodasSolicitacoes_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesNaoAprovadosPorSetor">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesNaoAprovadosPorSetorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodasSolicitacoesNaoAprovadosPorSetorResult" nillable="true" type="q12:ArrayOfNumSolicitacoesNaoAprovadosPorSetor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesAprovadosPorSetor">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesAprovadosPorSetorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodasSolicitacoesAprovadosPorSetorResult" nillable="true" type="q13:ArrayOfNumSolicitacoesAprovadosPorSetor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesBasicoAprovadas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Setor" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesBasicoAprovadasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodasSolicitacoesBasicoAprovadasResult" nillable="true" type="q14:ArrayOfTodasSolicitacoesAprovadas_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesBasicoNaoAprovadas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Setor" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesBasicoNaoAprovadasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodasSolicitacoesBasicoNaoAprovadasResult" nillable="true" type="q15:ArrayOfTodasSolicitacoesNaoAprovadas_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesPorSetorPesquisa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Criterio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Escolha" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesPorSetorPesquisaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodasSolicitacoesPorSetorPesquisaResult" nillable="true" type="q16:ArrayOfNumSolicitacoesPorSetor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Criterio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Escolha" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisaResult" nillable="true" type="q17:ArrayOfNumSolicitacoesNaoAprovadosPorSetor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesAprovadosPorSetorPesquisa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Criterio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Escolha" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelecionarTodasSolicitacoesAprovadosPorSetorPesquisaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" minOccurs="0" name="SelecionarTodasSolicitacoesAprovadosPorSetorPesquisaResult" nillable="true" type="q18:ArrayOfNumSolicitacoesAprovadosPorSetor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CContaCorrente" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:14139/CContaCorrente.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:14139/CContaCorrente.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:14139/CContaCorrente.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICContaCorrente_Inserir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Inserir" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_Inserir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_Alterar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Alterar" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_Alterar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlterarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_Excluir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Excluir" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_Excluir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_SelecionarTodos_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodos" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_SelecionarTodos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_SelecionarTodosCriterio_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosCriterio" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_SelecionarTodosCriterio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosCriterioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_SelecionarTodosView_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosView" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_SelecionarTodosView_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_SelecionarTodosViewCriterio_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosViewCriterio" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_SelecionarTodosViewCriterio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosViewCriterioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_ContaCorrenteExiste_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContaCorrenteExiste" />
+  </wsdl:message>
+  <wsdl:message name="ICContaCorrente_ContaCorrenteExiste_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContaCorrenteExisteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICContaCorrente">
+    <wsdl:operation name="Inserir">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICContaCorrente/Inserir" message="tns:ICContaCorrente_Inserir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICContaCorrente/InserirResponse" message="tns:ICContaCorrente_Inserir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICContaCorrente/Alterar" message="tns:ICContaCorrente_Alterar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICContaCorrente/AlterarResponse" message="tns:ICContaCorrente_Alterar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICContaCorrente/Excluir" message="tns:ICContaCorrente_Excluir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICContaCorrente/ExcluirResponse" message="tns:ICContaCorrente_Excluir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICContaCorrente/SelecionarTodos" message="tns:ICContaCorrente_SelecionarTodos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICContaCorrente/SelecionarTodosResponse" message="tns:ICContaCorrente_SelecionarTodos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosCriterio">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICContaCorrente/SelecionarTodosCriterio" message="tns:ICContaCorrente_SelecionarTodosCriterio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICContaCorrente/SelecionarTodosCriterioResponse" message="tns:ICContaCorrente_SelecionarTodosCriterio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosView">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICContaCorrente/SelecionarTodosView" message="tns:ICContaCorrente_SelecionarTodosView_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICContaCorrente/SelecionarTodosViewResponse" message="tns:ICContaCorrente_SelecionarTodosView_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosViewCriterio">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICContaCorrente/SelecionarTodosViewCriterio" message="tns:ICContaCorrente_SelecionarTodosViewCriterio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICContaCorrente/SelecionarTodosViewCriterioResponse" message="tns:ICContaCorrente_SelecionarTodosViewCriterio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContaCorrenteExiste">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICContaCorrente/ContaCorrenteExiste" message="tns:ICContaCorrente_ContaCorrenteExiste_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICContaCorrente/ContaCorrenteExisteResponse" message="tns:ICContaCorrente_ContaCorrenteExiste_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICContaCorrente" type="tns:ICContaCorrente">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Inserir">
+      <soap:operation soapAction="http://tempuri.org/ICContaCorrente/Inserir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Alterar">
+      <soap:operation soapAction="http://tempuri.org/ICContaCorrente/Alterar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap:operation soapAction="http://tempuri.org/ICContaCorrente/Excluir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodos">
+      <soap:operation soapAction="http://tempuri.org/ICContaCorrente/SelecionarTodos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosCriterio">
+      <soap:operation soapAction="http://tempuri.org/ICContaCorrente/SelecionarTodosCriterio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosView">
+      <soap:operation soapAction="http://tempuri.org/ICContaCorrente/SelecionarTodosView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosViewCriterio">
+      <soap:operation soapAction="http://tempuri.org/ICContaCorrente/SelecionarTodosViewCriterio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContaCorrenteExiste">
+      <soap:operation soapAction="http://tempuri.org/ICContaCorrente/ContaCorrenteExiste" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CContaCorrente">
+    <wsdl:port name="BasicHttpBinding_ICContaCorrente" binding="tns:BasicHttpBinding_ICContaCorrente">
+      <soap:address location="http://localhost:14139/CContaCorrente.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

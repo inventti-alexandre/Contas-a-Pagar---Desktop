@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a21bd3f8-ba95-4b90-aa9c-79d785b7193c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:14139/CBanco.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CBanco.wsdl" MetadataType="Wsdl" ID="2ecedec3-3911-47fe-8b29-e79c0a54fb7f" SourceId="1" SourceUrl="http://localhost:14139/CBanco.svc?wsdl" />
+    <MetadataFile FileName="CBanco.disco" MetadataType="Disco" ID="9b24287b-d5b6-4fd6-b6e9-8d7ebf863b70" SourceId="1" SourceUrl="http://localhost:14139/CBanco.svc?disco" />
+    <MetadataFile FileName="CBanco.xsd" MetadataType="Schema" ID="c07046a1-968d-4f34-bc59-77dbe304bebd" SourceId="1" SourceUrl="http://localhost:14139/CBanco.svc?xsd=xsd2" />
+    <MetadataFile FileName="CBanco1.xsd" MetadataType="Schema" ID="4fc108da-3283-45e6-9fce-dbeb08af370b" SourceId="1" SourceUrl="http://localhost:14139/CBanco.svc?xsd=xsd0" />
+    <MetadataFile FileName="CBanco2.xsd" MetadataType="Schema" ID="444ef92e-2df6-4ab5-b0b2-3304e996838d" SourceId="1" SourceUrl="http://localhost:14139/CBanco.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

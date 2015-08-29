@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dcc6e8e3-0c79-4362-8a54-ee9b9376d77e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:14139/CMaterial.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CMaterial.disco" MetadataType="Disco" ID="bb3ded4d-5807-48aa-9e73-934cfc96613f" SourceId="1" SourceUrl="http://localhost:14139/CMaterial.svc?disco" />
+    <MetadataFile FileName="CMaterial.wsdl" MetadataType="Wsdl" ID="0fce2e9c-9404-4f97-b768-e80a321f0725" SourceId="1" SourceUrl="http://localhost:14139/CMaterial.svc?wsdl" />
+    <MetadataFile FileName="CMaterial.xsd" MetadataType="Schema" ID="d6cb2c68-5a35-4e32-ac7b-8c795a2dfe07" SourceId="1" SourceUrl="http://localhost:14139/CMaterial.svc?xsd=xsd0" />
+    <MetadataFile FileName="CMaterial1.xsd" MetadataType="Schema" ID="4495b9f3-e287-46b0-9f1b-365b82dcdbf3" SourceId="1" SourceUrl="http://localhost:14139/CMaterial.svc?xsd=xsd1" />
+    <MetadataFile FileName="CMaterial2.xsd" MetadataType="Schema" ID="615f4f23-e684-4c88-9060-bd074ff7c678" SourceId="1" SourceUrl="http://localhost:14139/CMaterial.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

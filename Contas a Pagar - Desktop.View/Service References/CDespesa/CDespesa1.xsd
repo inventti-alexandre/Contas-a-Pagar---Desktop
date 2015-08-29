@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:14139/CDespesa.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Despesa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lancamento" type="xs:int" />
+      <xs:element minOccurs="0" name="Numero" type="xs:int" />
+      <xs:element minOccurs="0" name="Pagamento" type="xs:int" />
+      <xs:element minOccurs="0" name="ValorPrevisto" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Despesa" nillable="true" type="tns:Despesa" />
+  <xs:complexType name="ArrayOfDespesa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Despesa" nillable="true" type="tns:Despesa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDespesa" nillable="true" type="tns:ArrayOfDespesa" />
+</xs:schema>

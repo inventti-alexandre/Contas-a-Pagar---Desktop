@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="69bb0c8985d243e38288644d50f0d7a5" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.C__MigrationHistory" Width="1.5" PointX="10.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetRoles" Width="1.5" PointX="7.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserClaims" Width="1.5" PointX="12.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogins" Width="1.5" PointX="12.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUsers" Width="1.5" PointX="10" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Auditoria" Width="1.5" PointX="8" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Despesa" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Evento" Width="1.5" PointX="5.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Fornecedor" Width="1.5" PointX="3" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.FornecimentoMaterial" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Lancamento" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Material" Width="1.5" PointX="7.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Pagamento" Width="1.5" PointX="2.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Permissao" Width="1.5" PointX="11.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PlanoContas" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Setor" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SolicitacaoMaterial" Width="1.5" PointX="9.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="12.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Usuario" Width="1.5" PointX="14" PointY="2.875" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Auditoria_Evento" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Despesa_Lancamento1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Despesa_Pagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_FornecimentoServico_Fornecedor" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_FornecimentoServico_Pagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Lancamento_PlanoContas" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_SolicitacaoMaterial_Setor" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.AspNetUserRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.ItensFornecimento" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.ItensSolicitacao" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.Usuario_Permissao" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.Agencia" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="Model.Banco" Width="1.5" PointX="0.75" PointY="12.25" />
+        <EntityTypeShape EntityType="Model.ContaCorrente" Width="1.5" PointX="0.75" PointY="0.875" />
+        <AssociationConnector Association="Model.FK_Agencia_Banco" />
+        <AssociationConnector Association="Model.FK_ContaCorrente_Agencia1" />
+        <AssociationConnector Association="Model.FK_PlanoContas_ContaCorrente" />
+        <EntityTypeShape EntityType="Model.PesquisaAgencia" Width="1.5" PointX="14.375" PointY="5.75" />
+        <EntityTypeShape EntityType="Model.PesquisarCC" Width="1.5" PointX="14.375" PointY="9.75" />
+        <EntityTypeShape EntityType="Model.FornecimentosMateriais" Width="1.5" PointX="3.375" PointY="10.75" />
+        <AssociationConnector Association="Model.FK_Pagamento_FornecimentoMaterial" />
+        <EntityTypeShape EntityType="Model.RelacaoFornecimento" Width="1.5" PointX="0.75" PointY="15.75" />
+        <EntityTypeShape EntityType="Model.SolicitacoesMateriais" Width="1.5" PointX="16.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.RelacaoSolicitacao" Width="1.5" PointX="15.375" PointY="13.75" />
+        <EntityTypeShape EntityType="Model.NumFornecimentosPorEmpresa" Width="1.5" PointX="3.75" PointY="4.75" />
+        <EntityTypeShape EntityType="Model.NumSolicitacoesPorSetor" Width="1.5" PointX="16.375" PointY="4.75" />
+        <EntityTypeShape EntityType="Model.NumSolicitacoesAprovadosPorSetor" Width="1.5" PointX="16.375" PointY="7.75" />
+        <EntityTypeShape EntityType="Model.NumSolicitacoesNaoAprovadosPorSetor" Width="1.5" PointX="16.375" PointY="10.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

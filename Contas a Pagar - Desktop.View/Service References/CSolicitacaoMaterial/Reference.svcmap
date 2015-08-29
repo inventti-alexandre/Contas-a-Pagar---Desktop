@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0f346e26-713d-4103-8990-b0e78d4224cb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:14139/CSolicitacaoMaterial.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CSolicitacaoMaterial.xsd" MetadataType="Schema" ID="c75127a7-73b9-47a1-bec0-20c9e16a8666" SourceId="1" SourceUrl="http://localhost:14139/CSolicitacaoMaterial.svc?xsd=xsd0" />
+    <MetadataFile FileName="CSolicitacaoMaterial.wsdl" MetadataType="Wsdl" ID="e2287d0d-8034-4f96-a538-3161a197dfaf" SourceId="1" SourceUrl="http://localhost:14139/CSolicitacaoMaterial.svc?wsdl" />
+    <MetadataFile FileName="CSolicitacaoMaterial1.xsd" MetadataType="Schema" ID="293d343f-6c68-46e4-8366-e43ba57ccc6b" SourceId="1" SourceUrl="http://localhost:14139/CSolicitacaoMaterial.svc?xsd=xsd2" />
+    <MetadataFile FileName="CSolicitacaoMaterial2.xsd" MetadataType="Schema" ID="4d7ae002-d6b7-4055-af5b-f50abe35e8d6" SourceId="1" SourceUrl="http://localhost:14139/CSolicitacaoMaterial.svc?xsd=xsd1" />
+    <MetadataFile FileName="CSolicitacaoMaterial.disco" MetadataType="Disco" ID="4735bcc0-14cf-4f98-9084-c98d856575b8" SourceId="1" SourceUrl="http://localhost:14139/CSolicitacaoMaterial.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

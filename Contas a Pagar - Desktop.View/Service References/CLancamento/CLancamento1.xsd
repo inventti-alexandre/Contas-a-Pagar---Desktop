@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:14139/CLancamento.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Lancamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ContaCredito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataLancamento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Despesa" nillable="true" type="tns:ArrayOfDespesa" />
+      <xs:element minOccurs="0" name="Numero" type="xs:int" />
+      <xs:element minOccurs="0" name="PlanoContas" nillable="true" type="tns:PlanoContas" />
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Lancamento" nillable="true" type="tns:Lancamento" />
+  <xs:complexType name="ArrayOfDespesa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Despesa" nillable="true" type="tns:Despesa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDespesa" nillable="true" type="tns:ArrayOfDespesa" />
+  <xs:complexType name="Despesa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lancamento" type="xs:int" />
+      <xs:element minOccurs="0" name="Lancamento1" nillable="true" type="tns:Lancamento" />
+      <xs:element minOccurs="0" name="Numero" type="xs:int" />
+      <xs:element minOccurs="0" name="Pagamento" type="xs:int" />
+      <xs:element minOccurs="0" name="Pagamento1" nillable="true" type="tns:Pagamento" />
+      <xs:element minOccurs="0" name="ValorPrevisto" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Despesa" nillable="true" type="tns:Despesa" />
+  <xs:complexType name="Pagamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DataEmissao" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Despesa" nillable="true" type="tns:ArrayOfDespesa" />
+      <xs:element minOccurs="0" name="Fornecimento" type="xs:int" />
+      <xs:element minOccurs="0" name="FornecimentoMaterial" nillable="true" type="tns:FornecimentoMaterial" />
+      <xs:element minOccurs="0" name="FornecimentoMaterial1" nillable="true" type="tns:FornecimentoMaterial" />
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Pagamento" nillable="true" type="tns:Pagamento" />
+  <xs:complexType name="FornecimentoMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cancelado" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Fornecedor" type="xs:int" />
+      <xs:element minOccurs="0" name="Fornecedor1" nillable="true" type="tns:Fornecedor" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Material" nillable="true" type="tns:ArrayOfMaterial" />
+      <xs:element minOccurs="0" name="Pagamento" nillable="true" type="tns:Pagamento" />
+      <xs:element minOccurs="0" name="Pagamento1" nillable="true" type="tns:Pagamento" />
+      <xs:element minOccurs="0" name="Servico" type="xs:int" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FornecimentoMaterial" nillable="true" type="tns:FornecimentoMaterial" />
+  <xs:complexType name="Fornecedor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNPJ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FornecimentoMaterial" nillable="true" type="tns:ArrayOfFornecimentoMaterial" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="RazaoSocial" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Fornecedor" nillable="true" type="tns:Fornecedor" />
+  <xs:complexType name="ArrayOfFornecimentoMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FornecimentoMaterial" nillable="true" type="tns:FornecimentoMaterial" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFornecimentoMaterial" nillable="true" type="tns:ArrayOfFornecimentoMaterial" />
+  <xs:complexType name="ArrayOfMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Material" nillable="true" type="tns:Material" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMaterial" nillable="true" type="tns:ArrayOfMaterial" />
+  <xs:complexType name="Material">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FornecimentoMaterial" nillable="true" type="tns:ArrayOfFornecimentoMaterial" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="PrecoUnitario" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SolicitacaoMaterial" nillable="true" type="tns:ArrayOfSolicitacaoMaterial" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Material" nillable="true" type="tns:Material" />
+  <xs:complexType name="ArrayOfSolicitacaoMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SolicitacaoMaterial" nillable="true" type="tns:SolicitacaoMaterial" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSolicitacaoMaterial" nillable="true" type="tns:ArrayOfSolicitacaoMaterial" />
+  <xs:complexType name="SolicitacaoMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aprovado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Material" nillable="true" type="tns:ArrayOfMaterial" />
+      <xs:element minOccurs="0" name="Setor" type="xs:int" />
+      <xs:element minOccurs="0" name="Setor1" nillable="true" type="tns:Setor" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="SolicitacaoMaterial" nillable="true" type="tns:SolicitacaoMaterial" />
+  <xs:complexType name="Setor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="SolicitacaoMaterial" nillable="true" type="tns:ArrayOfSolicitacaoMaterial" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Setor" nillable="true" type="tns:Setor" />
+  <xs:complexType name="PlanoContas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Consolidacao" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Conta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContaCorrente" nillable="true" type="tns:ContaCorrente" />
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lancamento" nillable="true" type="tns:ArrayOfLancamento" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="PlanoContas" nillable="true" type="tns:PlanoContas" />
+  <xs:complexType name="ContaCorrente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Agencia" type="xs:int" />
+      <xs:element minOccurs="0" name="Agencia1" nillable="true" type="tns:Agencia" />
+      <xs:element minOccurs="0" name="Conta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Limite" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PlanoContas" nillable="true" type="tns:PlanoContas" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ContaCorrente" nillable="true" type="tns:ContaCorrente" />
+  <xs:complexType name="Agencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Banco" type="xs:int" />
+      <xs:element minOccurs="0" name="Banco1" nillable="true" type="tns:Banco" />
+      <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContaCorrente" nillable="true" type="tns:ArrayOfContaCorrente" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gerente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Telefone" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Agencia" nillable="true" type="tns:Agencia" />
+  <xs:complexType name="Banco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Agencia" nillable="true" type="tns:ArrayOfAgencia" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Banco" nillable="true" type="tns:Banco" />
+  <xs:complexType name="ArrayOfAgencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Agencia" nillable="true" type="tns:Agencia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAgencia" nillable="true" type="tns:ArrayOfAgencia" />
+  <xs:complexType name="ArrayOfContaCorrente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContaCorrente" nillable="true" type="tns:ContaCorrente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContaCorrente" nillable="true" type="tns:ArrayOfContaCorrente" />
+  <xs:complexType name="ArrayOfLancamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Lancamento" nillable="true" type="tns:Lancamento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLancamento" nillable="true" type="tns:ArrayOfLancamento" />
+</xs:schema>

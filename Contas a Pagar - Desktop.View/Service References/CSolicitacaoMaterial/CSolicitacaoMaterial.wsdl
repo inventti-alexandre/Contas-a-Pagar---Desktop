@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CSolicitacaoMaterial" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:14139/CSolicitacaoMaterial.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:14139/CSolicitacaoMaterial.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:14139/CSolicitacaoMaterial.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Contas_a_Pagar___Desktop.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICSolicitacaoMaterial_Inserir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Inserir" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_Inserir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosView_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosView" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosView_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodos_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodos" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosMateriais_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosMateriais" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosMateriais_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosMateriaisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosSolicitacaos_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosSolicitacaos" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosSolicitacaos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosSolicitacaosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosDetalhesSolicitacaos_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosDetalhesSolicitacaos" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosDetalhesSolicitacaos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosDetalhesSolicitacaosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosSolicitacaosCriterio_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosSolicitacaosCriterio" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosSolicitacaosCriterio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosSolicitacaosCriterioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SolicitacaoExiste_InputMessage">
+    <wsdl:part name="parameters" element="tns:SolicitacaoExiste" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SolicitacaoExiste_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SolicitacaoExisteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosNaoAprovados_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosNaoAprovados" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosNaoAprovados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosNaoAprovadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosAprovados_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosAprovados" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodosAprovados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodosAprovadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_AprovarSolicitacao_InputMessage">
+    <wsdl:part name="parameters" element="tns:AprovarSolicitacao" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_AprovarSolicitacao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AprovarSolicitacaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesPorSetor_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesPorSetor" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesPorSetor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesPorSetorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasico_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesBasico" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesBasicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesNaoAprovadosPorSetor_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesNaoAprovadosPorSetor" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesNaoAprovadosPorSetor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesNaoAprovadosPorSetorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesAprovadosPorSetor_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesAprovadosPorSetor" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesAprovadosPorSetor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesAprovadosPorSetorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasicoAprovadas_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesBasicoAprovadas" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasicoAprovadas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesBasicoAprovadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasicoNaoAprovadas_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesBasicoNaoAprovadas" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasicoNaoAprovadas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesBasicoNaoAprovadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesPorSetorPesquisa_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesPorSetorPesquisa" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesPorSetorPesquisa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesPorSetorPesquisaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisa_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisa" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesAprovadosPorSetorPesquisa_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesAprovadosPorSetorPesquisa" />
+  </wsdl:message>
+  <wsdl:message name="ICSolicitacaoMaterial_SelecionarTodasSolicitacoesAprovadosPorSetorPesquisa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTodasSolicitacoesAprovadosPorSetorPesquisaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICSolicitacaoMaterial">
+    <wsdl:operation name="Inserir">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/Inserir" message="tns:ICSolicitacaoMaterial_Inserir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/InserirResponse" message="tns:ICSolicitacaoMaterial_Inserir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosView">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosView" message="tns:ICSolicitacaoMaterial_SelecionarTodosView_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosViewResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodosView_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodos" message="tns:ICSolicitacaoMaterial_SelecionarTodos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosMateriais">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosMateriais" message="tns:ICSolicitacaoMaterial_SelecionarTodosMateriais_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosMateriaisResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodosMateriais_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosSolicitacaos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosSolicitacaos" message="tns:ICSolicitacaoMaterial_SelecionarTodosSolicitacaos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosSolicitacaosResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodosSolicitacaos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosDetalhesSolicitacaos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosDetalhesSolicitacaos" message="tns:ICSolicitacaoMaterial_SelecionarTodosDetalhesSolicitacaos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosDetalhesSolicitacaosResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodosDetalhesSolicitacaos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosSolicitacaosCriterio">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosSolicitacaosCriterio" message="tns:ICSolicitacaoMaterial_SelecionarTodosSolicitacaosCriterio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosSolicitacaosCriterioResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodosSolicitacaosCriterio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SolicitacaoExiste">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SolicitacaoExiste" message="tns:ICSolicitacaoMaterial_SolicitacaoExiste_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SolicitacaoExisteResponse" message="tns:ICSolicitacaoMaterial_SolicitacaoExiste_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosNaoAprovados">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosNaoAprovados" message="tns:ICSolicitacaoMaterial_SelecionarTodosNaoAprovados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosNaoAprovadosResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodosNaoAprovados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosAprovados">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosAprovados" message="tns:ICSolicitacaoMaterial_SelecionarTodosAprovados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosAprovadosResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodosAprovados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AprovarSolicitacao">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/AprovarSolicitacao" message="tns:ICSolicitacaoMaterial_AprovarSolicitacao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/AprovarSolicitacaoResponse" message="tns:ICSolicitacaoMaterial_AprovarSolicitacao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesPorSetor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesPorSetor" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesPorSetor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesPorSetorResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesPorSetor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesBasico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesBasico" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesBasicoResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesNaoAprovadosPorSetor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesNaoAprovadosPorSetor" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesNaoAprovadosPorSetor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesNaoAprovadosPorSetorResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesNaoAprovadosPorSetor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesAprovadosPorSetor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesAprovadosPorSetor" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesAprovadosPorSetor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesAprovadosPorSetorResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesAprovadosPorSetor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesBasicoAprovadas">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesBasicoAprovadas" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasicoAprovadas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesBasicoAprovadasResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasicoAprovadas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesBasicoNaoAprovadas">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesBasicoNaoAprovadas" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasicoNaoAprovadas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesBasicoNaoAprovadasResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesBasicoNaoAprovadas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesPorSetorPesquisa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesPorSetorPesquisa" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesPorSetorPesquisa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesPorSetorPesquisaResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesPorSetorPesquisa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisa" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisaResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesAprovadosPorSetorPesquisa">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesAprovadosPorSetorPesquisa" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesAprovadosPorSetorPesquisa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesAprovadosPorSetorPesquisaResponse" message="tns:ICSolicitacaoMaterial_SelecionarTodasSolicitacoesAprovadosPorSetorPesquisa_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICSolicitacaoMaterial" type="tns:ICSolicitacaoMaterial">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Inserir">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/Inserir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosView">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodos">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosMateriais">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosMateriais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosSolicitacaos">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosSolicitacaos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosDetalhesSolicitacaos">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosDetalhesSolicitacaos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosSolicitacaosCriterio">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosSolicitacaosCriterio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitacaoExiste">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SolicitacaoExiste" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosNaoAprovados">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosNaoAprovados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodosAprovados">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodosAprovados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AprovarSolicitacao">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/AprovarSolicitacao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesPorSetor">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesPorSetor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesBasico">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesBasico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesNaoAprovadosPorSetor">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesNaoAprovadosPorSetor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesAprovadosPorSetor">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesAprovadosPorSetor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesBasicoAprovadas">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesBasicoAprovadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesBasicoNaoAprovadas">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesBasicoNaoAprovadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesPorSetorPesquisa">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesPorSetorPesquisa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisa">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesNaoAprovadosPorSetorPesquisa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTodasSolicitacoesAprovadosPorSetorPesquisa">
+      <soap:operation soapAction="http://tempuri.org/ICSolicitacaoMaterial/SelecionarTodasSolicitacoesAprovadosPorSetorPesquisa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CSolicitacaoMaterial">
+    <wsdl:port name="BasicHttpBinding_ICSolicitacaoMaterial" binding="tns:BasicHttpBinding_ICSolicitacaoMaterial">
+      <soap:address location="http://localhost:14139/CSolicitacaoMaterial.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
